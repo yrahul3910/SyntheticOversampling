@@ -14,10 +14,12 @@ import time
 class Generator(tf.keras.Model):
     def __init__(self, output_dim, input_dim, hidden_dim=128):
         super().__init__()
-        init = tf.keras.initializers.GlorotUniform
-        self.input_layer = tf.keras.layers.Dense(units=input_dim, kernel_initializer=init)
-        self.hidden_layer = tf.keras.layers.Dense(units=hidden_dim, activation="relu", kernel_initializer=init)
-        self.output_layer = tf.keras.layers.Dense(units=output_dim, activation="sigmoid", kernel_initializer=init)
+        init1 = tf.keras.initializers.GlorotUniform
+        init2 = tf.keras.initializers.GlorotUniform
+        init3 = tf.keras.initializers.GlorotUniform
+        self.input_layer = tf.keras.layers.Dense(units=input_dim, kernel_initializer=init1)
+        self.hidden_layer = tf.keras.layers.Dense(units=hidden_dim, activation="relu", kernel_initializer=init2)
+        self.output_layer = tf.keras.layers.Dense(units=output_dim, activation="sigmoid", kernel_initializer=init3)
     
     def call(self, inputs):
         x = self.input_layer(inputs)
@@ -28,10 +30,12 @@ class Generator(tf.keras.Model):
 class Critic(tf.keras.Model):
     def __init__(self, input_dim, hidden_dim=128):
         super().__init__()
-        init = tf.keras.initializers.GlorotUniform
-        self.input_layer = tf.keras.layers.Dense(units=input_dim, kernel_initializer=init)
-        self.hidden_layer = tf.keras.layers.Dense(units=hidden_dim, kernel_initializer=init)
-        self.logits = tf.keras.layers.Dense(units=1, activation=None, kernel_initializer=init)
+        init1 = tf.keras.initializers.GlorotUniform
+        init2 = tf.keras.initializers.GlorotUniform
+        init3 = tf.keras.initializers.GlorotUniform
+        self.input_layer = tf.keras.layers.Dense(units=input_dim, kernel_initializer=init1)
+        self.hidden_layer = tf.keras.layers.Dense(units=hidden_dim, kernel_initializer=init2)
+        self.logits = tf.keras.layers.Dense(units=1, activation=None, kernel_initializer=init3)
 
     def call(self, inputs):
         x = self.input_layer(inputs)
