@@ -11,3 +11,4 @@ howso-engine==9.1.5
 sdv==1.6.0
 lightgbm==4.0.0
 tensorflow==2.13.0
+imbalanced-learn
