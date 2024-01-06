@@ -4,6 +4,8 @@ from imblearn.over_sampling import BorderlineSMOTE
 from imblearn.over_sampling import SMOTE
 from imblearn.over_sampling import SVMSMOTE
 
+from raise_utils.transforms import WeightedFuzzyOversampler
+
 from sklearn.neighbors import NearestNeighbors
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
@@ -23,6 +25,14 @@ import time
 import numpy as np
 import random
 import pandas as pd
+
+
+def WFOOversampling(X_train, y_train):
+    wfo = WeightedFuzzyOversampler()
+    start_time = time.time()
+    x_train_new, y_train_new = wfo.fit_transform(X_train, y_train)
+    
+    return round(time.time() - start_time, 2), x_train_new, y_train_new
 
 def RandomOversampling(X_train, y_train):
     rs = random.randint(0, 10000)
