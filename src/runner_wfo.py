@@ -72,11 +72,9 @@ def main(project, repeats=10, rp_threshold=12):
                                                           y_train=y_train_copy)
         
         scaler = StandardScaler()
-        X_train_scale = pd.DataFrame(scaler.fit_transform(X_train_new), columns=X_train_new.columns, index=X_train_new.index)
-        X_test_scale = pd.DataFrame(scaler.transform(X_test), columns=X_test.columns, index=X_test.index)
+        X_train_scale = scaler.fit_transform(X_train_new)
+        X_test_scale = scaler.transform(X_test)
 
-        print("y train ratio: 1:" + str(round(y_train_new.value_counts()[0] / y_train_new.value_counts()[1])))
-        
         clf_SVM, clf_KNN, clf_LR, clf_DT, clf_RF, clf_LightGBM, clf_Adaboost, clf_GBDT = create_models()
         clf_SVM.fit(X_train_scale, y_train_new)
         clf_KNN.fit(X_train_scale, y_train_new)

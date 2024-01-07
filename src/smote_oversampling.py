@@ -4,7 +4,7 @@ from imblearn.over_sampling import BorderlineSMOTE
 from imblearn.over_sampling import SMOTE
 from imblearn.over_sampling import SVMSMOTE
 
-from raise_utils.transforms import WeightedFuzzyOversampler
+from raise_utils.transforms.wfo import WeightedFuzzyOversampler
 
 from sklearn.neighbors import NearestNeighbors
 from sklearn.ensemble import RandomForestClassifier
