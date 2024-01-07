@@ -106,6 +106,46 @@ def main(project, repeats=10, rp_threshold=12):
             csv_writer.writerow(["WFO", rt, "Adaboost"] + evaluate_result(y_pred_Adaboost, y_test))
             csv_writer.writerow(["WFO", rt, "GBDT"] + evaluate_result(y_pred_GBDT, y_test))
 
+        print("----- wfov2 -----")
+        X_train_copy, y_train_copy = X_train.copy(), y_train.copy()
+
+        rt, X_train_new, y_train_new = WFOOversampling(X_train=X_train_copy,
+                                                          y_train=y_train_copy, ultrasample=True)
+        
+        scaler = StandardScaler()
+        X_train_scale = scaler.fit_transform(X_train_new)
+        X_test_scale = scaler.transform(X_test)
+
+        clf_SVM, clf_KNN, clf_LR, clf_DT, clf_RF, clf_LightGBM, clf_Adaboost, clf_GBDT = create_models()
+        clf_SVM.fit(X_train_scale, y_train_new)
+        clf_KNN.fit(X_train_scale, y_train_new)
+        clf_LR.fit(X_train_scale, y_train_new)
+        clf_DT.fit(X_train_scale, y_train_new)
+        clf_RF.fit(X_train_scale, y_train_new)
+        clf_LightGBM.fit(X_train_scale, y_train_new)
+        clf_Adaboost.fit(X_train_scale, y_train_new)
+        clf_GBDT.fit(X_train_scale, y_train_new)
+
+        y_pred_SVM = clf_SVM.predict(X_test_scale)
+        y_pred_KNN = clf_KNN.predict(X_test_scale)
+        y_pred_LR = clf_LR.predict(X_test_scale)
+        y_pred_DT = clf_DT.predict(X_test_scale)
+        y_pred_RF = clf_RF.predict(X_test_scale)
+        y_pred_LightGBM = clf_LightGBM.predict(X_test_scale)
+        y_pred_Adaboost = clf_Adaboost.predict(X_test_scale)
+        y_pred_GBDT = clf_GBDT.predict(X_test_scale)
+
+        with open(write_path, "a", newline="") as f:
+            csv_writer = csv.writer(f)
+
+            csv_writer.writerow(["WFO2", rt, "SVM"] + evaluate_result(y_pred_SVM, y_test))
+            csv_writer.writerow(["WFO2", rt, "KNN"] + evaluate_result(y_pred_KNN, y_test))
+            csv_writer.writerow(["WFO2", rt, "LR"] + evaluate_result(y_pred_LR, y_test))
+            csv_writer.writerow(["WFO2", rt, "DT"] + evaluate_result(y_pred_DT, y_test))
+            csv_writer.writerow(["WFO2", rt, "RF"] + evaluate_result(y_pred_RF, y_test))
+            csv_writer.writerow(["WFO2", rt, "LightGBM"] + evaluate_result(y_pred_LightGBM, y_test))
+            csv_writer.writerow(["WFO2", rt, "Adaboost"] + evaluate_result(y_pred_Adaboost, y_test))
+            csv_writer.writerow(["WFO2", rt, "GBDT"] + evaluate_result(y_pred_GBDT, y_test))
 
         print("----- end of experiment ------")
 
