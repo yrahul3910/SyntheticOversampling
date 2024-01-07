@@ -27,10 +27,18 @@ import random
 import pandas as pd
 
 
-def WFOOversampling(X_train, y_train):
+def WFOOversampling(X_train, y_train, ultrasample=False):
     wfo = WeightedFuzzyOversampler()
     start_time = time.time()
+
     x_train_new, y_train_new = wfo.fit_transform(X_train, y_train)
+
+    if ultrasample:
+        wfo = WeightedFuzzyOversampler()
+        x_train_new, y_train_new = wfo.fit_transform(X_train, y_train)
+
+        smote = SMOTE()
+        x_train_new, y_train_new = smote.fit_resample(X_train, y_train)
     
     return round(time.time() - start_time, 2), x_train_new, y_train_new
 
