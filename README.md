@@ -38,18 +38,9 @@ xxxxx (update when paper up on arxiv)
    ```
    All processed txt files are saved in the **\evaluation** folder.
 
-5. The last step is to run the statistical test. Please note that the script for statistical test is developed in Python2. Hence you need to have Python2 to run the last step.
+5. The last step is to run the statistical test.
    ```
-   cat ./evaluation/[case_study_name]/[metric_name]_[learner].txt | python2 ./evaluation/sk_stats.py --text [text_size] --latex [True/False]
+    for file in ./evaluation/[dataset]/*; do cat $file | python3 ./evaluation/sk_stats.py > ./evaluation/results/[dataset]/$(basename $file); done
    ```
-   1. **metric_name**: The metric to evaluate the prediction performance. The available metrics are
-        1. auc
-        2. recall
-        3. fpr
-        4. f1
-        5. gscore
-     
-      We use recall, fpr, and gscore in our paper.
-   2. **learner**: The name of the machine learning models. They are [Adaboost, DT, GBDT, KNN, LightGBM, LR, RF, SVM]
-   3. **text_size**: The text size to display the statistical results in the terminal
-   4. **latex**: Whether to display the latex version of generated results.
+    This file prints out the Scott-Knott test results, and also prints out a list of medians that you can copy into a spreadsheet. The order of these numbers is as follows: No, ADASYN, BorderlineSMOTE, DataSynthesizer, DAZZLE, Howso, Random, RP, SDV-GAN, SDV-GC, SMOTE, SMOTUNED, SVMSMOTE, WFO, WFOv2, WGAN. It highlights the best performers with an asterisk. For fpr, please change the `max` in the code to `min`.
+
