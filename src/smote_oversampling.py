@@ -35,10 +35,10 @@ def WFOOversampling(X_train, y_train, ultrasample=False):
 
     if ultrasample:
         wfo = WeightedFuzzyOversampler()
-        x_train_new, y_train_new = wfo.fit_transform(X_train, y_train)
+        x_train_new, y_train_new = wfo.fit_transform(x_train_new, y_train_new)
 
         smote = SMOTE()
-        x_train_new, y_train_new = smote.fit_resample(X_train, y_train)
+        x_train_new, y_train_new = smote.fit_resample(x_train_new, y_train_new)
     
     return round(time.time() - start_time, 2), x_train_new, y_train_new
 
