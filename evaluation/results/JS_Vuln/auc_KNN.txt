@@ -20,6 +20,7 @@
    8      SMOTE (                         |         --*            ), 0.716,  0.720,  0.748,  0.761,  0.769
    8   SVMSMOTE (                         |          -*            ), 0.717,  0.730,  0.748,  0.757,  0.766
    8        WFO (                         |           *            ), 0.734,  0.743,  0.748,  0.756,  0.775
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfo2', 'wfov2', 'wgan']
 0.725
 0.733
 0.742

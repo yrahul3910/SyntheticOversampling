@@ -15,6 +15,7 @@
   12      WFOv2 (                         |            *           ), 0.702,  0.771,  0.772,  0.773,  0.775
   13     ADASYN (                         |            *           ), 0.774,  0.774,  0.774,  0.774,  0.774
   14        WFO (                         |            *           ), 0.775,  0.775,  0.775,  0.775,  0.775
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfov2', 'wgan']
 0.561
 0.774
 0.494
@@ -29,6 +30,5 @@
 0.748
 0.486
 0.775*
-0.772
 0.772
 0.569

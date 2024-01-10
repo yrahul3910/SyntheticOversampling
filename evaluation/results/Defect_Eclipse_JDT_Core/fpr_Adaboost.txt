@@ -20,6 +20,7 @@
   12      Howso (           -*---         |                        ), 0.189,  0.226,  0.252,  0.277,  0.333
   12     DAZZLE (    ---------------------|---------------------*- ), 0.069,  0.082,  0.943,  0.994,  1.000
   13       WGAN (                         |                       *), 0.943,  0.994,  1.000,  1.000,  1.000
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfov2', 'wgan']
 0.082
 0.138
 0.132
@@ -34,6 +35,5 @@
 0.17
 0.113
 0.214
-0.126
 0.157
 1.0*

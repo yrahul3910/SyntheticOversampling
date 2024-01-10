@@ -20,6 +20,7 @@
    8   SMOTUNED (  *-                     |                        ), 0.038,  0.054,  0.059,  0.063,  0.085
    8      Howso (  *--                    |                        ), 0.036,  0.049,  0.059,  0.069,  0.107
    8    SDV_GAN (-----*------             |                        ), 0.000,  0.000,  0.118,  0.167,  0.250
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfo2', 'wfov2', 'wgan']
 0.0
 0.047
 0.0

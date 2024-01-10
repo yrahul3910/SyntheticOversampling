@@ -20,6 +20,7 @@
   14     DAZZLE (    -------*-------------|----------------        ), 0.084,  0.092,  0.233,  0.517,  0.848
   15   SMOTUNED (           -*-           |                        ), 0.224,  0.230,  0.250,  0.271,  0.284
   16       WGAN (            ---------*---|-----------------       ), 0.092,  0.254,  0.430,  0.611,  0.876
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfo2', 'wfov2', 'wgan']
 0.086
 0.142
 0.132

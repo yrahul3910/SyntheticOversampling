@@ -20,6 +20,7 @@
    8     Howso2 (                        -|---*                    ), 0.485,  0.486,  0.582,  0.586,  0.591
    9 SDV_FASTML (                        -|---*                    ), 0.488,  0.496,  0.585,  0.593,  0.593
   10   SMOTUNED (                         |----*----               ), 0.489,  0.516,  0.605,  0.645,  0.707
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfo2', 'wfov2', 'wgan']
 0.498
 0.496
 0.484

@@ -15,6 +15,7 @@
   12         RP (                         |     *                  ), 0.635,  0.635,  0.635,  0.635,  0.635
   13        WFO (                         |     *                  ), 0.636,  0.636,  0.636,  0.636,  0.636
   14         No (                         |     *                  ), 0.637,  0.637,  0.637,  0.637,  0.637
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfov2', 'wgan']
 0.637*
 0.566
 0.565
@@ -29,6 +30,5 @@
 0.562
 0.562
 0.636
-0.569
 0.566
 0.514

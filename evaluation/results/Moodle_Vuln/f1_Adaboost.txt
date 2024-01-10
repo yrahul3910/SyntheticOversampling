@@ -20,6 +20,7 @@
    4      SMOTE (---*---                  |                        ), 0.000,  0.000,  0.062,  0.091,  0.160
    5         RP (----*--                  |                        ), 0.000,  0.000,  0.083,  0.105,  0.160
    5 SDV_FASTML (----*--                  |                        ), 0.000,  0.000,  0.100,  0.111,  0.143
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfo2', 'wfov2', 'wgan']
 0.0
 0.059
 0.0

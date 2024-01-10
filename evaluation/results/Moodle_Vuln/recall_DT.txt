@@ -20,6 +20,7 @@
    6 SDV_FASTML (---------*---------      |                        ), 0.000,  0.000,  0.200,  0.200,  0.400
    7      Howso (         *---------------|---                     ), 0.000,  0.200,  0.200,  0.400,  0.600
    7       WGAN (-------------------*-----|---                     ), 0.000,  0.000,  0.400,  0.400,  0.600
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfo2', 'wfov2', 'wgan']
 0.0
 0.0
 0.0

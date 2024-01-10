@@ -20,6 +20,7 @@
   10         No (                         | ---*                   ), 0.542,  0.554,  0.601,  0.622,  0.628
   10    DAZZLE2 (                         |   -*-                  ), 0.558,  0.595,  0.601,  0.610,  0.643
   10    DAZZLE1 (                         | ---*                   ), 0.552,  0.560,  0.612,  0.620,  0.622
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfo2', 'wfov2', 'wgan']
 0.601*
 0.556
 0.546

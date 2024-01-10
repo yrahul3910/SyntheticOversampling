@@ -15,6 +15,7 @@
   14      SMOTE (                *        |                        ), 0.333,  0.333,  0.333,  0.333,  0.333
   15        WFO (                 *       |                        ), 0.348,  0.348,  0.348,  0.348,  0.348
   16         No (                      *  |                        ), 0.444,  0.444,  0.444,  0.444,  0.444
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfov2', 'wgan']
 0.444*
 0.222
 0.267
@@ -29,6 +30,5 @@
 0.167
 0.2
 0.348
-0.3
 0.273
 0.308

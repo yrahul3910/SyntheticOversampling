@@ -15,6 +15,7 @@
    9      Howso (                     *---|--                      ), 0.429,  0.429,  0.429,  0.429,  0.571
   10 BorderlineSMOTE (                         |  *                     ), 0.571,  0.571,  0.571,  0.571,  0.571
   11   SVMSMOTE (                         |         *              ), 0.714,  0.714,  0.714,  0.714,  0.714
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfov2', 'wgan']
 0.0
 0.429
 0.571
@@ -29,6 +30,5 @@
 0.143
 0.714*
 0.0
-0.429
 0.0
 0.0

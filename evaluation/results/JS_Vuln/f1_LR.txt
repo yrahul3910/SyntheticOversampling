@@ -20,6 +20,7 @@
   13     Random (                     -*  |                        ), 0.424,  0.437,  0.445,  0.451,  0.478
   14   SVMSMOTE (                     -*- |                        ), 0.428,  0.435,  0.454,  0.469,  0.493
   15         RP (                        *|                        ), 0.469,  0.487,  0.492,  0.503,  0.533
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfo2', 'wfov2', 'wgan']
 0.271
 0.337
 0.312

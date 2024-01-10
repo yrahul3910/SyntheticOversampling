@@ -20,6 +20,7 @@
    8     ADASYN (                        -|-*-                     ), 0.463,  0.485,  0.550,  0.571,  0.581
    8       WFO2 (                      ---|-*----                  ), 0.412,  0.460,  0.556,  0.574,  0.659
    9 BorderlineSMOTE (                         |--*-                    ), 0.480,  0.509,  0.566,  0.593,  0.614
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfov2', 'wgan']
 0.5
 0.55
 0.566*
@@ -34,6 +35,5 @@
 0.515
 0.533
 0.549
-0.556
 0.507
 0.343

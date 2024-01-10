@@ -15,6 +15,7 @@
   13   SVMSMOTE (                        *|                        ), 0.489,  0.489,  0.489,  0.489,  0.489
   14 BorderlineSMOTE (                        *|                        ), 0.495,  0.495,  0.495,  0.495,  0.495
   15       WGAN (                         |                       *), 1.000,  1.000,  1.000,  1.000,  1.000
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfov2', 'wgan']
 0.037
 0.343
 0.495
@@ -29,6 +30,5 @@
 0.142
 0.489
 0.235
-0.357
 0.146
 1.0*

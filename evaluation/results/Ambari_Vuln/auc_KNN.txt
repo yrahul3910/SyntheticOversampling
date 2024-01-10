@@ -15,8 +15,9 @@
   12   SVMSMOTE (                         |    *                   ), 0.606,  0.606,  0.606,  0.606,  0.606
   13     ADASYN (                         |      *                 ), 0.656,  0.656,  0.656,  0.656,  0.656
   14       WFO2 (                         |      -*                ), 0.596,  0.660,  0.664,  0.669,  0.672
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfov2', 'wgan']
 0.5
-0.656
+0.656*
 0.537
 0.5
 0.5
@@ -29,6 +30,5 @@
 0.478
 0.606
 0.489
-0.664*
 0.495
 0.5

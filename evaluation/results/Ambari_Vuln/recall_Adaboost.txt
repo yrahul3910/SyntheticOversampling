@@ -15,6 +15,7 @@
   12         RP (              *          |                        ), 0.286,  0.286,  0.286,  0.286,  0.286
   13      Howso (       --------------*---|----------------------- ), 0.143,  0.143,  0.429,  0.429,  1.000
   14       WGAN (                         |                       *), 1.000,  1.000,  1.000,  1.000,  1.000
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfov2', 'wgan']
 0.286
 0.143
 0.143
@@ -29,6 +30,5 @@
 0.143
 0.143
 0.286
-0.143
 0.143
 1.0*

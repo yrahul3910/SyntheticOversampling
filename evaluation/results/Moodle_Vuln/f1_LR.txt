@@ -20,6 +20,7 @@
    7       WFO2 ( --*-                    |                        ), 0.026,  0.040,  0.069,  0.073,  0.104
    8 SDV_FASTML (   *---                  |                        ), 0.032,  0.065,  0.079,  0.100,  0.143
    9    SDV_GAN (----*-                   |                        ), 0.000,  0.000,  0.095,  0.118,  0.133
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfo2', 'wfov2', 'wgan']
 0.0
 0.047
 0.065

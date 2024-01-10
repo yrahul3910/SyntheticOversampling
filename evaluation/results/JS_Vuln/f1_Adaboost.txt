@@ -20,6 +20,7 @@
   11    DAZZLE2 (                         |   -*-                  ), 0.551,  0.581,  0.603,  0.634,  0.653
   11         No (                         |  --*-                  ), 0.563,  0.577,  0.606,  0.627,  0.642
   11 SDV_FASTML (                         |  --*-                  ), 0.569,  0.572,  0.606,  0.635,  0.646
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfo2', 'wfov2', 'wgan']
 0.606*
 0.485
 0.489

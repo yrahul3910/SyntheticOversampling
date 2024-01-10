@@ -15,6 +15,7 @@
   13         RP (                         |  *                     ), 0.571,  0.571,  0.571,  0.571,  0.571
   13      Howso (              -----------|--*-------------------- ), 0.286,  0.286,  0.571,  0.714,  1.000
   13      WFOv2 (                         |  *                     ), 0.571,  0.571,  0.571,  0.571,  0.571
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfov2', 'wgan']
 0.143
 0.286
 0.0
@@ -29,6 +30,5 @@
 0.571
 0.143
 0.571
-0.286
 0.571*
 0.0

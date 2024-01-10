@@ -20,6 +20,7 @@
   11     Howso1 (                         |  ----*-                ), 0.571,  0.571,  0.653,  0.673,  0.694
   12      Howso (                         |    ---*---             ), 0.612,  0.612,  0.673,  0.714,  0.755
   13        WFO (                         |             ---*---    ), 0.796,  0.796,  0.857,  0.878,  0.939
+Rxs below are: ['no', 'adasyn', 'borderlinesmote', 'datasynthesizer', 'dazzle', 'howso', 'random', 'rp', 'sdv_gan', 'sdv_gc', 'smote', 'smotuned', 'svmsmote', 'wfo', 'wfov2', 'wgan']
 0.143
 0.612
 0.592
@@ -34,6 +35,5 @@
 0.592
 0.408
 0.857*
-0.592
 0.571
 0.551
